@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
   get 'home/about'
- 
+  get 'home/math'
+  get 'home/algebra'
+  get 'home/geometry'
+  get 'home/science'
+  get 'home/history'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

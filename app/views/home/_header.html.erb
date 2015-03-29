@@ -18,7 +18,9 @@
            <li> <%= link_to 'Home', root_path%></li>
            <li><%= link_to 'About Us', home_about_path %></li> 
         <% if user_signed_in? %>
-        
+          <li><%= link_to "Mathematics", home_math_path %></li>
+          <li><%= link_to "Science", home_science_path %></li>
+          <li><%= link_to "History", home_history_path %></li>
           <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
           <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
         <% else %>
